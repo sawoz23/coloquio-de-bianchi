@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Libre</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="mercadolibre.css">
+</head>
+<body>
+<header id="main-header">
+    <div class="top-bar">
+        <!-- Contenido del top bar -->     <div class="top-bar">
+            <div class="logo">
+                <img src="mercado libre.png" alt="mercado libre logo" id="mercado">
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar productos, marcas y más...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="header-actions">
+                <div class="envio">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Enviar a</span>
+                </div>
+                <div class="account-menu">
+                    <a href="#" class="btn-crear-cuenta">Crea tu cuenta</a>
+                    <a href="#" class="btn-ingresar">Ingresa</a>
+                    <a href="#" class="mis-compras">Mis compras</a>
+                </div>
+                <div class="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu" id="main-menu">
+        <!-- Menú principal -->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Categorías <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Historial</a></li>
+                <li><a href="#">Supermercado</a></li>
+                <li><a href="#">Moda</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+       </nav>
+     </nav>
+</header>
+     <main>
+        <section class="hero-banner">
+            <img src="mercadolibre.png" alt="Banner Principal">
+        </section>
+        <section class="ofertas-principales">
+            <h2>Ofertas del día</h2>
+            <div class="ofertas-grid">
+                <div class="oferta-card">
+                    <img src="puma.png" alt="Producto 1">
+                    <div class="oferta-info">
+                        <span class="precio">$19.990</span>
+                        <span class="descuento">15% OFF</span>
+                        <span class="envio-gratis">Envío gratis</span>
+                    </div>
+                </div>
+                <!-- Repite este bloque para más productos -->
+                <div class="oferta-card">
+                    <img src="goma.png" alt="Producto 2">
+                    <div class="oferta-info">
+                        <span class="precio">$29.990</span>
+                        <span class="descuento">20% OFF</span>
+                        <span class="envio-gratis">Envío gratis</span>
+                    </div>
+                </div>
+                <!-- Más tarjetas de productos -->
+            </div>
+        </section>
+        <section class="categorias-principales">
+            <h2>Comprá por categoría</h2>
+            <div class="categorias-grid">
+                <div class="categoria-card">
+                    <img src="micro.png" alt="Electrónica">
+                    <span>Electrónica</span>
+                </div>
+                <div class="categoria-card">
+                    <img src="nike.png" alt="Moda">
+                    <span>Moda</span>
+                </div>
+                <!-- Más categorías -->
+            </div>
+        </section>
+        <section class="beneficios">
+            <div class="beneficio-card">
+                <i class="fas fa-credit-card"></i>
+                <div>
+                    <h3>Tarjeta de Mercado Libre</h3>
+                    <p>Hasta 12 cuotas sin interés</p>
+                </div>
+            </div>
+            <div class="beneficio-card">
+                <i class="fas fa-truck"></i>
+                <div>
+                    <h3>Envío gratis</h3>
+                    <p>En miles de productos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>Sobre Mercado Libre</h4>
+                <ul>
+                    <li><a href="#">Quiénes somos</a></li>
+                    <li><a href="#">Políticas</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicio al cliente</h4>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>©2024 mercado libre hecho por samuel</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
