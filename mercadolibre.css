@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    background-color: #ebebeb;
+}
+/* Header y Top Bar */
+#main-header {
+    background-color:yellow;
+}
+.top-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+.search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+}
+.search-bar input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 2px 0 0 2px;
+}
+.search-bar button {
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 0 2px 2px 0;
+}
+.header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.account-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.account-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+.cart i {
+    font-size: 1.2rem;
+}
+/* Menú Principal */
+.main-menu {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.main-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-menu ul li {
+    text-align: center;
+    padding: 5px;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+}
+/* Banner Hero */
+.hero-banner img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+}
+/* Ofertas Principales */
+.ofertas-principales, .categorias-principales {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 10px;
+}
+.ofertas-principales h2, .categorias-principales h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+.ofertas-grid, .categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+.oferta-card, .categoria-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.oferta-card:hover, .categoria-card:hover {
+    transform: scale(1.05);
+}
+.oferta-card img, .categoria-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.oferta-info {
+    padding: 10px;
+}
+.oferta-info .precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+.oferta-info .descuento {
+    background-color: #00a650;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 4px;
+    margin-left: 10px;
+    font-size: 0.8rem;
+}
+.oferta-info .envio-gratis {
+    display: block;
+    color: #00a650;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+/* Beneficios */
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 20px;
+    gap: 20px;
+}
+.beneficio-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+.beneficio-card i {
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #3483fa;
+}
+/* Footer */
+footer {
+    background-color: white;
+    padding: 20px;
+}
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-column {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer-column ul {
+    list-style: none;
+}
+.footer-column a {
+    text-decoration: none;
+    color: #666;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-icons a {
+    color: #3483fa;
+    font-size: 1.5rem;
+}
+.footer-bottom {
+    text-align: center;
+    color: #666;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .top-bar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header-actions {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .account-menu {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .main-menu ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .ofertas-grid, .categorias-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (min-width: 1024px) {
+    .ofertas-grid, .categorias-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
